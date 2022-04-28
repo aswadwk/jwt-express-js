@@ -1,0 +1,29 @@
+{
+  "name": "be-jwt",
+  "version": "1.0.0",
+  "description": "Belajar Express, mysql dan JWT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "Js",
+    "JWT",
+    "mysql2"
+  ],
+  "author": "al-aswad",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "dotnet": "^1.1.4",
+    "express": "^4.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  }
+}

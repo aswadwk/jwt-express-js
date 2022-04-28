@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkFzd2FkIiwiZW1haWwiOiJoYWphcmFzd2Fka29tQGdtYWlsLmNvbSIsImlhdCI6MTY1MTAzMzE3NSwiZXhwIjoxNjUxMDMzMTk1fQ.2EZBNH33V3HMy1pZmRksGhTrgw2oW2QyMvG3PmH0ihE
+
+
+###
+# POST /users - Create a new user/register
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Aswad",
+    "email": "hajaraswadkom@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+}
+
+###
+# POST /users/login - Login a user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "hajaraswadkom@gmail.com",
+    "password": "123456"
+}
+
+### refresh token
+GET http://localhost:5000/token
+
+### Logout
+GET http://localhost:5000/logout
