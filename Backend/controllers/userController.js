@@ -70,7 +70,8 @@ export const login = async (req, res) => {
         // res.json({})
         res.cookie("refreshToken", refreshToken, {
             httpOnly: true,
-            maxAge: 24 * 60 * 60 * 1000
+            maxAge: 24 * 60 * 60 * 1000,
+            path: "/"
         });
 
         res.json({
